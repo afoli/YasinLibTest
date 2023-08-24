@@ -1,6 +1,5 @@
 plugins {
     id 'com.android.library'
-//    id 'com.github.dcendents.android-maven'
     id 'maven-publish'
 }
 
@@ -23,10 +22,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-//    compileOptions {
-//        sourceCompatibility JavaVersion.VERSION_1_8
-//        targetCompatibility JavaVersion.VERSION_1_8
-//    }
 }
 
 dependencies {
@@ -38,46 +33,3 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-//java {
-//    sourceCompatibility = JavaVersion.VERSION_1_8
-//    targetCompatibility = JavaVersion.VERSION_1_8
-//}
-
-//publishing {
-//    publications {
-//        testPublication(MavenPublication) {
-//            from components.java
-//            artifact sourceJar
-//            pom {
-//                name = "Demo"
-//                description = "A demonstration of Maven POM customization"
-//                url = "http://www.example.com/project"
-//                licenses {
-//                    license {
-//                        name = "The Apache License, Version 2.0"
-//                        url = "http://www.apache.org/licenses/LICENSE-2.0.txt"
-//                    }
-//                }
-//                developers {
-//                    developer {
-//                        id 'afoli'
-//                        name 'Afsaneh Fallahzadeh'
-//                        email 'afsaneh.fallahzadeh@gmail.com'
-//                    }
-//                }
-//                scm {
-//                    connection = "scm:svn:http://subversion.example.com/svn/project/trunk/"
-//                    developerConnection = "scm:svn:https://subversion.example.com/svn/project/trunk/"
-//                    url = "http://subversion.example.com/svn/project/trunk/"
-//                }
-//            }
-//        }
-//    }
-//}
-//
-//
-//tasks.register('sourceJar', Jar) {
-//    from sourceSets.main.allJava
-//    archiveClassifier = "sources"
-//}
-//
