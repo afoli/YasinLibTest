@@ -1,10 +1,87 @@
-<pluginRepositories>
-    <pluginRepository>
-        <id>maven-snapshots</id>
-        <url>https://repository.apache.org/content/repositories/snapshots/</url>
-    </pluginRepository>
-    <pluginRepository>
-        <id>maven-shade-plugin</id>
-        <url>https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-shade-plugin</url>
-    </pluginRepository>
-</pluginRepositories>
+<!--<pluginRepositories>-->
+<!--    <pluginRepository>-->
+<!--        <id>maven-snapshots</id>-->
+<!--        <url>https://repository.apache.org/content/repositories/snapshots/</url>-->
+<!--    </pluginRepository>-->
+<!--    <pluginRepository>-->
+<!--        <id>maven-shade-plugin</id>-->
+<!--        <url>https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-shade-plugin</url>-->
+<!--    </pluginRepository>-->
+<!--</pluginRepositories>-->
+
+
+<!--<project>-->
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-install-plugin</artifactId>-->
+<!--                <version>2.5</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>m2</id>-->
+<!--                        <goals>-->
+<!--                            <goal>install-file</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <groupId>com.github.afoli</groupId>-->
+<!--                            <artifactId>ir.yasinlib.yasinlibtest</artifactId>-->
+<!--                            <version>1.0.6</version>-->
+<!--                            <packaging>ir.yasinlib.yasinlibtest</packaging>-->
+<!--                            <file>-->
+<!--                                ${project.build.directory}/${project.build.finalName}.${project.packaging}-->
+<!--                            </file>-->
+<!--                            <localRepositoryPath>m2/repository</localRepositoryPath>-->
+<!--                            <pomFile>pom.xml</pomFile>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+<!--</project>-->
+
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.hello</groupId>
+    <artifactId>gs-maven-android</artifactId>
+    <version>1.0.6</version>
+    <packaging>apk</packaging>
+    <properties> <!-- use UTF-8 for everything -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>4.1.1.4</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.afoli</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>3.9.0-rc.1</version>
+                <configuration>
+                    <sdk>
+                        <platform>24</platform>
+                    </sdk>
+                    <deleteConflictingFiles>true</deleteConflictingFiles>
+                    <undeployBeforeDeploy>true</undeployBeforeDeploy>
+                </configuration>
+                <extensions>true</extensions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
