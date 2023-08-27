@@ -53,9 +53,9 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.google.android</groupId>
-            <artifactId>android</artifactId>
-            <version>4.1.1.4</version>
+            <groupId>com.github.afoli</groupId>
+            <artifactId>ir.yasinlib.yasinlibtest</artifactId>
+            <version>1.0.6</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -63,8 +63,8 @@
         <plugins>
             <plugin>
                 <groupId>com.github.afoli</groupId>
-                <artifactId>android-maven-plugin</artifactId>
-                <version>3.9.0-rc.1</version>
+                <artifactId>ir.yasinlib.yasinlibtest</artifactId>
+                <version>1.0.6</version>
                 <configuration>
                     <sdk>
                         <platform>24</platform>
