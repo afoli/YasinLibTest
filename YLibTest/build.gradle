@@ -50,12 +50,12 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.afoli'
             artifactId = 'yasinLibTest'
-            version = "1.0.19"
+            version = "1.0.20"
             pom {
                 description = 'First release'
             }
-            artifact(sourceJar)
-            artifact("$buildDir/outputs/aar/yasinLibTest-release.aar")
+//            artifact(sourceJar)
+//            artifact("$buildDir/outputs/aar/yasinLibTest-release.aar")
         }
     }
     repositories {
