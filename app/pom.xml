@@ -3,8 +3,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.afoli</groupId> <!-- com.github.geek-atif-->
-    <artifactId>YLibTest</artifactId> <!-- com-atifqamar-customtoast -->
-    <version>1.0.18</version> <!-- 1.0 -->
+    <artifactId>yasinLibTest</artifactId> <!-- com-atifqamar-customtoast -->
+    <version>1.0.19</version> <!-- 1.0 -->
     <packaging>pom</packaging>
-    <description>1.0.18</description>
+    <description>1.0.19</description>
 </project>
