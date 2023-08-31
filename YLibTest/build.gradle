@@ -49,8 +49,8 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId = 'com.github.afoli'
-            artifactId = 'YasinLibTest'
-            version = "1.0.17"
+            artifactId = 'YLibTest'
+            version = "1.0.18"
             pom {
                 description = 'First release'
             }
