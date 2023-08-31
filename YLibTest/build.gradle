@@ -65,7 +65,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'ir.yasinlib'
             artifactId = 'ylibtest'
-            version = "1.0.12"
+            version = "1.0.15"
             artifact(sourceJar)
             artifact("$buildDir/outputs/aar/ylibtest-release.aar")
         }
