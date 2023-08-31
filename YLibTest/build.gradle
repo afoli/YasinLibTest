@@ -39,19 +39,41 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
+//publishing {
+//    publications {
+//        maven(MavenPublication) {
+//            groupId = 'com.github.afoli'
+//            artifactId = 'YasinLibTest'
+//            version = "1.0.12"
+//            pom {
+//                description = 'First release'
+//            }
+//        }
+//    }
+//    repositories {
+//        mavenLocal()
+//    }
+//}
+
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier "sources"
+}
+
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId = 'com.github.afoli'
-            artifactId = 'YasinLibTest'
+            groupId = 'ir.yasinlib'
+            artifactId = 'ylibtest'
             version = "1.0.12"
-            pom {
-                description = 'First release'
-            }
+            artifact(sourceJar)
+            artifact("$buildDir/outputs/aar/ylibtest-release.aar")
         }
     }
     repositories {
         mavenLocal()
     }
 }
+
+
 
