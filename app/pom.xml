@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.afoli</groupId> <!-- com.github.geek-atif-->
     <artifactId>yasinLibTest</artifactId> <!-- com-atifqamar-customtoast -->
-    <version>1.0.21</version> <!-- 1.0 -->
+    <version>1.0.23</version> <!-- 1.0 -->
     <packaging>pom</packaging>
-    <description>1.0.21</description>
+    <description>1.0.23</description>
 </project>
